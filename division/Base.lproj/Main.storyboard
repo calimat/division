@@ -71,6 +71,9 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="calculateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jwq-Rx-WV4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -94,6 +97,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="div1TxtField" destination="eny-SH-QWq" id="qqq-ls-bfg"/>
+                        <outlet property="div2TxtField" destination="DdZ-Y3-QCX" id="Df9-ws-4Vu"/>
+                        <outlet property="resultLbl" destination="a4H-yh-kPm" id="k1y-0e-t97"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
