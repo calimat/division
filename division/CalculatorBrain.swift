@@ -10,4 +10,7 @@ import UIKit
 
 class CalculatorBrain: NSObject {
 
+    func divideTwoNumbers(dividend:Int, divisor: Int ) -> Float?{
+        return Float(dividend/divisor)
+    }
 }

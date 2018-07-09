@@ -23,6 +23,15 @@ class divisionTests: XCTestCase {
         super.tearDown()
     }
     
+    func test10DivideBy5MustBe2() {
+    let result = calculatorBrain.divideTwoNumbers(dividend:10, divisor:5)
+    XCTAssert(result == 2, "Result must be 2")
+    }
+    
+    func test20DivideBy4MustBe5() {
+    let result = calculatorBrain.divideTwoNumbers(dividend: 20, divisor: 4)
+    XCTAssert(result == 5, "Result must be 5")
+    }
     
  
     
