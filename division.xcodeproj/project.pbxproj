@@ -14,6 +14,9 @@
 		F6773F0320F2E36900785BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6773F0120F2E36900785BD7 /* LaunchScreen.storyboard */; };
 		F6773F0E20F2E36A00785BD7 /* divisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6773F0D20F2E36A00785BD7 /* divisionTests.swift */; };
 		F6773F1920F2E36A00785BD7 /* divisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6773F1820F2E36A00785BD7 /* divisionUITests.swift */; };
+		F6773F2720F2F6A400785BD7 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6773F2620F2F6A400785BD7 /* CalculatorBrain.swift */; };
+		F6773F2820F2F6A400785BD7 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6773F2620F2F6A400785BD7 /* CalculatorBrain.swift */; };
+		F6773F2920F2F6A400785BD7 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6773F2620F2F6A400785BD7 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		F6773F1420F2E36A00785BD7 /* divisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = divisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6773F1820F2E36A00785BD7 /* divisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = divisionUITests.swift; sourceTree = "<group>"; };
 		F6773F1A20F2E36A00785BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6773F2620F2F6A400785BD7 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 				F6773EF820F2E36800785BD7 /* AppDelegate.swift */,
 				F6773EFA20F2E36800785BD7 /* ViewController.swift */,
 				F6773EFC20F2E36800785BD7 /* Main.storyboard */,
+				F6773F2620F2F6A400785BD7 /* CalculatorBrain.swift */,
 				F6773EFF20F2E36900785BD7 /* Assets.xcassets */,
 				F6773F0120F2E36900785BD7 /* LaunchScreen.storyboard */,
 				F6773F0420F2E36900785BD7 /* Info.plist */,
@@ -256,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6773F2720F2F6A400785BD7 /* CalculatorBrain.swift in Sources */,
 				F6773EFB20F2E36800785BD7 /* ViewController.swift in Sources */,
 				F6773EF920F2E36800785BD7 /* AppDelegate.swift in Sources */,
 			);
@@ -265,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6773F2820F2F6A400785BD7 /* CalculatorBrain.swift in Sources */,
 				F6773F0E20F2E36A00785BD7 /* divisionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6773F2920F2F6A400785BD7 /* CalculatorBrain.swift in Sources */,
 				F6773F1920F2E36A00785BD7 /* divisionUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
