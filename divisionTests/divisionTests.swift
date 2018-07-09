@@ -24,18 +24,23 @@ class divisionTests: XCTestCase {
     }
     
     func test10DivideBy5MustBe2() {
-    let result = calculatorBrain.divideTwoNumbers(dividend:10, divisor:5)
-    XCTAssert(result == 2, "Result must be 2")
+         calculatorBrain.divideTwoNumbers(dividend: 10, divisor: 5) { (result, error) in
+             XCTAssert(result == 2, "Result must be 2")
+        }
     }
     
     func test20DivideBy4MustBe5() {
-    let result = calculatorBrain.divideTwoNumbers(dividend: 20, divisor: 4)
-    XCTAssert(result == 5, "Result must be 5")
+        calculatorBrain.divideTwoNumbers(dividend: 20, divisor: 4) { (result, error) in
+              XCTAssert(result == 5, "Result must be 5")
+        }
     }
     
     func test10DivideBy0MustBeNil() {
-        let result = calculatorBrain.divideTwoNumbers(dividend: 10, divisor: 0)
-        XCTAssertNil(result, "Result must be nil")
+         calculatorBrain.divideTwoNumbers(dividend: 10, divisor: 0) { (result, error) in
+              XCTAssertNil(result, "Result must be nil")
+            XCTAssert(error?.domain == "Error dividng by 0", "Error message should be 'Error dividng by 0' ")
+        }
+      
     }
  
     
