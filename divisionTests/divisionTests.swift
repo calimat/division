@@ -33,6 +33,10 @@ class divisionTests: XCTestCase {
     XCTAssert(result == 5, "Result must be 5")
     }
     
+    func test10DivideBy0MustBeNil() {
+        let result = calculatorBrain.divideTwoNumbers(dividend: 10, divisor: 0)
+        XCTAssertNil(result, "Result must be nil")
+    }
  
     
 }

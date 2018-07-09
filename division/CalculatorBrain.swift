@@ -11,6 +11,9 @@ import UIKit
 class CalculatorBrain: NSObject {
 
     func divideTwoNumbers(dividend:Int, divisor: Int ) -> Float?{
+        if divisor == 0 {
+            return nil
+        } 
         return Float(dividend/divisor)
     }
 }
