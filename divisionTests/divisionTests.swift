@@ -43,5 +43,12 @@ class divisionTests: XCTestCase {
       
     }
  
+    func testTestDivisionTime() {
+        measure {
+            self.calculatorBrain.divideTwoNumbers(dividend: 10, divisor: 2, completion: { (result, error) in
+                
+            })
+        }
+    }
     
 }
