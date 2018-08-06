@@ -21,17 +21,17 @@ class onlineCalculatorTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testRetreiveURLFor10DividedBy2() {
+        let url = NSURL(string: "https://www.calcatraz.com/calculator/api?c=10%2F2")
+        let response = onlineCal.retrieveURLForDivision(dividend:10, divisor: 2)
+        XCTAssert(url == response, "URL must be equals 'https://www.calcatraz.com/calculator/api?c=10%2F2' ")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testRetreiveURLFor10DividedBy2ShouldFail() {
+        let url = NSURL(string: "https://www.calcatraz.com/calculator/api?c=10%2F2")
+        let response = onlineCal.retrieveURLForDivision(dividend:20, divisor: 2)
+        XCTAssert(url != response, "URL must be not equals 'https://www.calcatraz.com/calculator/api?c=10%2F2' ")
     }
+  
     
 }

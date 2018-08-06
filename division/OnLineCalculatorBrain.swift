@@ -10,4 +10,7 @@ import UIKit
 
 class OnLineCalculatorBrain: NSObject {
 
+    func retrieveURLForDivision(dividend:Int, divisor: Int) -> NSURL {
+        return NSURL(string: "https://www.calcatraz.com/calculator/api?c=\(dividend)%2F\(divisor)")!
+    }
 }
